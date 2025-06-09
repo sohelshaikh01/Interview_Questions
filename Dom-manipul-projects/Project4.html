@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> DOM Manipulation Project 4</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: darkcyan;
+            padding: 0 1rem;
+            color: white;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .container {
+            border: 2px solid white;
+            border-radius: 7px;
+            padding: 0.8rem;
+            margin: auto;
+            width: fit-content;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin: 0 auto;
+        }
+
+        .list-items {
+            list-style: none;
+            padding: 0.4rem 0.7rem;
+            border: 1px solid white;
+            margin-left: -2rem;
+            font-size: 20px;
+        }
+
+        #rugby {
+            margin-left: 0;
+        }
+
+        .button {
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 4px;
+            padding: 0.4rem;
+            color: white;
+            display: block;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 id="main-heading"> Event Delegation</h1>
+
+    <div class="container" id="sports">
+        <ul>
+            <li class="list-items" id="football">Football</li>
+            <li class="list-items" id="basketball">BasketBall</li>
+            <li class="list-items" id="boxing">Boxing</li>
+            <li class="list-items" id="tennis">Tennis</li>
+            <li class="list-items" id="golf">Golf</li>
+        </ul>
+    </div>
+
+    <script>
+        // DOM Manipulation
+
+        // Event Delegation
+
+        // It allows users to append a SINGLE event listener to a parent element that adds it to all of its present AND future descendant that match a selector.
+
+        /* 
+        document.querySelector("#football").addEventListener("click", function(e) {
+            console.log("football is clicked");
+
+            const target = e.target;
+
+            if(target.matches("li")) {
+                target.style.backgroundColor = "#acd5f3f2";
+            }
+        });
+
+        document.querySelector("#basketball").addEventListener("click", function(e) {
+            console.log("basketball is clicked");
+
+            const target = e.target;
+
+            if(target.matches("li")) {
+                target.style.backgroundColor = "#acd5f3f2";
+            }
+        });
+
+        document.querySelector("#boxing").addEventListener("click", function(e) {
+            console.log("boxing is clicked");
+
+            const target = e.target;
+
+            if(target.matches("li")) {
+                target.style.backgroundColor = "#acd5f3f2";
+            }
+        });
+
+        document.querySelector("#tennis").addEventListener("click", function(e) {
+            console.log("tennis is clicked");
+
+            const target = e.target;
+
+            if(target.matches("li")) {
+                target.style.backgroundColor = "#acd5f3f2";
+            }
+        });
+
+        document.querySelector("#golf").addEventListener("click", function(e) {
+            console.log("golf is clicked");
+
+            const target = e.target;
+
+            if(target.matches("li")) {
+                target.style.backgroundColor = "#acd5f3f2";
+            }
+        }); 
+        */
+
+        // Using Event Delegation this can be done in small code.
+
+        document.querySelector('#sports').addEventListener("click", function(e) {
+
+        if(e.target.getAttribute('id') === null) return;
+        console.log(e.target.getAttribute('id') + " is clicked");
+
+        const target = e.target;
+
+        if(target.matches('li')) {
+            target.style.backgroundColor = "#acd5f3f2";
+        }
+        });
+
+        const sports = document.querySelector("#sports");
+        const newSport = document.createElement("li");
+
+        newSport.innerText = "Rugby";
+        newSport.setAttribute("id", "rugby");
+        newSport.setAttribute("class", 'list-items'); 
+
+        sports.appendChild(newSport);
+
+    </script>
+</body>
+</html>

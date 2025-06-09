@@ -7,7 +7,6 @@ const body = document.body;
 // body.appendChild("Hello World");
 // similar but accepts only element
 
-
 // // Creating and Adding Element
 
 // const div = document.createElement("div"); // Only create here.
@@ -85,7 +84,7 @@ spanHi.classList.remove("el1"); // Remove
 spanHi.classList.toggle("el3"); // Exists ? Remove : Add.
 
 spanHi.classList.toggle("el1", true); 
-// Perfom based on boolean
+// Perform based on boolean
 
 // // Changing Style of Element
 

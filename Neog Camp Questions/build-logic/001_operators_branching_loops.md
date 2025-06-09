@@ -34,6 +34,7 @@
 
 1. Write a program to take an input from a user and find its Factorial.
    `Example: Factorial of 5 is 120`
+   
 1. Write a Program to take a number input from user and find if the number is Prime or not.
 
 1. Write a program to take a day as an input and determine whether it is a weekday or weekend.

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> DOM Manipulation Project 1</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            background-color: rgb(91, 131, 144);
+            color: white;
+            font-family: sans-serif;
+        }
+
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            margin: 1rem auto;
+        }
+
+        .box-container {
+            padding: 1rem;
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .boxes {
+            padding: 1.5rem;
+            border: 2px solid white;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .btn {
+            padding: 6px 8px;
+            margin: auto;
+            border: 1px solid white;
+            border-radius: 5px;
+            background: transparent;
+            color: white;
+            font-size: 1rem;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 id="main-heading"> Event Listeners</h1>
+
+    <div class="container">
+        <div class="box-container">
+            <div class="boxes box-1">
+                <h2 id="heading">Example 1</h2>
+                <button class="btn btn-1" onclick="alert('I Love Javascript')"> Enter</button>
+            </div>
+            <div class="boxes box-2">
+                <h2 id="heading">Example 2</h2>
+                <button class="btn btn-2"> Enter</button>
+            </div>
+            <div class="boxes box-3">
+                <h2 id="heading">Example 3</h2>
+                <button class="btn btn-3"> Enter</button>
+            </div>
+        </div>
+    </div>
+
+    <script >
+        // DOM Manipulation ----------------------
+
+        // Event Listeners
+
+        // element.addEventListener("click", function);
+
+        const buttonTwo = document.querySelector('.btn-2');
+
+        function alertBtn() {
+            alert("I also love Javascript");
+        }
+
+        buttonTwo.addEventListener("click", alertBtn);
+
+        // Mouseover Event
+
+        const newBoxBackground = document.querySelector('.box-3');
+
+        function newBackground() {
+            newBoxBackground.style.backgroundColor = 'darkcyan';
+        }
+
+        newBoxBackground.addEventListener("mouseover", newBackground);
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> DOM Manipulation Project 3</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: darkcyan;
+            padding: 0 1rem;
+            color: white;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        .div2 {
+            border: 2px solid white;
+            border-radius: 10px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            max-width: 200px;
+            margin: auto;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .div1 {
+            border: 1px solid white;
+            border-radius: 6px;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .button {
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 4px;
+            padding: 0.4rem;
+            color: white;
+            display: block;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1 id="main-heading"> Event Probagation</h1>
+
+    <!-- Event Capturing -->
+    <!-- Target (Button) -->
+    <!-- Event Bubbling -->
+
+    <div class="div2">
+        2
+        <div class="div1">
+            1
+            <!-- <button class="button">Click</button> -->
+             <a href="" class="button"> Click</a>
+            
+        </div>
+    </div>
+
+    <script>
+        // DOM Manipulation
+
+        // Event Probagation
+
+        // If all false then it starts from button and ends to window.
+        // false by default.
+
+        window.addEventListener("click", function() {
+            console.log("Window");
+        }, false);
+
+        document.addEventListener("click", function() {
+            console.log("Document");
+        }, false);
+
+        document.querySelector(".div2").addEventListener("click", function(e) {
+            // e.stopPropagation();
+            console.log("DIV 2");
+        }, {once: true});
+
+        document.querySelector(".div1").addEventListener("click", function(e) {
+            console.log("DIV 1");
+        }, true);
+
+        document.querySelector(".button").addEventListener("click", function(e) {  
+            e.preventDefault();
+            console.log(e.target.innerText = 'Clicked!');
+        }, true);
+    </script>
+</body>
+</html>
