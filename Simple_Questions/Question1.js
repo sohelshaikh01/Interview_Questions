@@ -10,6 +10,7 @@
 // 3. Use console.log() to display current year.
 // const fullDate = new Date();
 // console.log("Year is", fullDate.getFullYear());
+// console.log("Year is ", fullDate.getFullYear());
 
 // 4. Create two variables for first and last name.
 // const first = "super";
@@ -28,7 +29,6 @@
 // error = "Something went wrong"; 
 // console.error(error);
 
-
 // 7. Log the square of the number 12 to the console.
 // console.log("Square of 12:", 12 ** 2);
 
@@ -42,5 +42,4 @@
 // else console.log(false);
 
 // 10. Log the result of 100 / 0 and observe the output.
-// console.log(100/0);
-
+// console.log(100/0); // Infinity

@@ -29,15 +29,12 @@
 //     if(i%2 !== 0) console.log(i);
 // }
 
-
-
 // 5. Use do...while loop to print numbers from 5 to 1.
 // let ac = 5;
 // do {
 //     console.log(ac);
 //     ac--;
 // } while(ac>0);
-
 
 // 6. Create a for loop that calculates the factorial of 5.
 // let fact = 1;
@@ -59,11 +56,11 @@
 // }
 
 
-// 8. User a for loop to reverse an array.
+// 8. Use a for loop to reverse an array.
 // let arr = [1, 2, 3, 4, 5];
 // for(let i=arr.length - 1; i>=0; i--){
 //     console.log(arr[i]);
-// }
+// } // Just printing
 
 
 // let arr = [1, 2, 3, 4, 5];

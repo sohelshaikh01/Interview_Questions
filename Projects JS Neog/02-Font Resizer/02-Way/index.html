@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Resizer</title>
+    <style>
+        .operations {
+            margin-top: 1rem;
+        }
+
+        .output {
+            margin-top: 0.5rem;
+            padding: 2px;
+            border: 1px solid black;
+            display: inline-block;
+            min-width: 150px;
+            min-height: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Font Resizer</h1>
+    <textarea 
+        name="text-input" 
+        id="text-input"
+        class="text-input"
+        placeholder="Enter some text here...">
+    </textarea>
+    <div id="operations" >
+        <button id="increase">+ Increment</button>
+        <button id="decrease">- Decrement</button>
+    </div>
+    <div id="output" class="output"></div>
+
+    <!-- SCRIPT -->
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+</html>

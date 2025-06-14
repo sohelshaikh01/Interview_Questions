@@ -1,7 +1,7 @@
-// // 4. Arrays Questions
+// // 4. Arrays Methods Questions
 
 // 1. Create an array of your top 5 favorite movies and log it.
-// let movies = ['Avg', 'Ult', 'Inf', 'End'];
+// let movies = ['Avg', 'Ult', 'Inf', 'End', "War"];
 // movies.forEach(movie => console.log(movie));
 
 // 2. Find and log the second element of an array.
@@ -45,7 +45,6 @@
 // console.log(narr);
 // Bubble Sort
 
-
 // 10. Write a program that creates a copy of an array without mutating the original.
 // let narr2 = [...narr]; 
 // let narr2 = [];
@@ -54,5 +53,3 @@
 
 // let narr2 = narr; 
 // Operation on New array also change original array
-
-

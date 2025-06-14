@@ -1,4 +1,4 @@
-
+ 
 // // 5. Functions Questions
 
 // 1. Write a function to check if a number is even or odd.
@@ -7,7 +7,6 @@
 //     else return "odd";
 // }
 // console.log(evod(21));
-
 
 // 2. Create a function to calculate the area of a circle with a given radius.
 // function area(r) {
