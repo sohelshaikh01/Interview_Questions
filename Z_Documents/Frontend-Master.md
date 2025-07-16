@@ -175,15 +175,3 @@ Great! Here’s a **remixed, beginner-friendly 15-Day Plan** where topics reappe
    → *Bring it all together into a working, optimized, and tested fullstack feature.*
 
 ---
-
-## 🧠 Bonus Idea:
-
-Track progress using:
-
-* ✅ GitHub repo with 15-day commits
-* 🗂 Notion tracker per day
-* 📓 Daily summary in markdown for each day
-
----
-
-Would you like this as a **Notion template**, **markdown file**, or **Trello board** next?

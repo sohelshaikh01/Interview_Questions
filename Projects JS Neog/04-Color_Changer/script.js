@@ -1,6 +1,6 @@
 // Color Changer
 
-// Variable
+// Variables
 
 let txt = document.querySelector('#txt-input');
 
