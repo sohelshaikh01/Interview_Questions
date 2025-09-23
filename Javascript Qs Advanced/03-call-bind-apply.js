@@ -1,6 +1,6 @@
 // Call, Bind And Apply in Javascript (Explicit Binding)
 
-// Question 1 - What is Call ? -----------
+// Question 1 - What is Call ? ---------------------
 
 // var obj = { name: "aman" }
 
@@ -11,7 +11,8 @@
 // console.log(sayHello());
 // console.log(sayHello.call(obj, 24));
 
-// Question 2 - What is Apply ? -----------
+
+// Question 2 - What is Apply ? ---------------------
 
 // var obj = { name: "aman" }
 
@@ -21,7 +22,8 @@
 
 // console.log(sayHello.apply(obj, [24, "Software Engineer"]));
 
-// Question 2 - What is Bind ? -----------
+
+// Question 3 - What is Bind ? ---------------------
 
 // var obj = { name: "aman" }
 
@@ -34,9 +36,10 @@
 
 // console.log(bindFunc(25, "Superman"));
 // console.log(bindFunc(21, "Batman"));
-// // We can use this function for multiple times 
+// // We can use this function for multiple times \
 
-// Question 4 - What's the Output ?
+
+// Question 4 - What's the Output ? ----------------
 
 // const person = { name: "Aman" };
 
@@ -67,6 +70,7 @@
 
 // console.log(person.getAge.bind(person2)()); // 24
 
+
 // Question 6 - What's the Output -----------
 
 // var status = "😎";
@@ -87,6 +91,7 @@
 //     // It pointing to the context of function
 //     // It is calling global variable
 // }, 0);
+
 
 // Question 7 - Call printAnimals such that it prints all animals in object
 
@@ -109,6 +114,7 @@
 //     printAnimals.call(animals[i], i);
 // }
 
+
 // Question 8 - Append an array to another array. -------------
 
 // const array = ["a", "b"];
@@ -117,6 +123,7 @@
 // array.push.apply(array, elements);
 
 // console.log(array);
+
 
 // Question 9 - Using apply to enhance Built-in functions. -------------
 
@@ -137,9 +144,7 @@ const numbers = [5, 6, 2, 3, 7];
 
 // console.log(min, max);
 
-
-// console.log(Math.max.apply(null, numbers)) 
-
+// console.log(Math.max.apply(null, numbers));
 
 // Question 10 - Bound function ---------------
 

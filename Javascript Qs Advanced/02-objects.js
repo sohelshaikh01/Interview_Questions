@@ -16,7 +16,7 @@
 // console.log(user);
 
 
-// Question on delete ------------
+// Question on delete ----------------------------
 
 // const func = (function(a) {
 //     delete a;
@@ -27,17 +27,19 @@
 // delete only delete properties from object
 // Not from local variable
 
+
 // Operations on space in property name -----------
+
 // const user = {
 //     name: "supernova",
-//     "like this": "superman"
+//     "like": "superman"
 // }
 
-// delete user['like this']
-// console.log(user['like this'])
+// delete user['like']
+// console.log(user['like'])
 
 
-// Dynamic values add into object ----------
+// Dynamic values add into object ---------------
 
 // const property = "firstName";
 // const value = "powerfull";
@@ -48,7 +50,8 @@
 
 // console.log(user);
 
-// Printing all values of object -----------
+
+// Printing all values of object ---------------
 
 // for(key in user) {
 //     console.log(key);
@@ -57,3 +60,4 @@
 // for(key in user) {
 //     console.log(user[key]);
 // }
+

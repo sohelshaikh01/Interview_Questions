@@ -6,7 +6,6 @@ function square(num) {
     return num * num;
 }
 
-
 // Q2 - What is Function Expressions? ------------------------
 // Storing function inside a variable
 const square = function (num) {
@@ -16,7 +15,6 @@ const square = function (num) {
 // anonymus function has no name, can be assigned to the variable, can be passed as callback.
 // called as normal function
 square();
-
 
 // Q3 - What are First Class Function? -------------------------
 // Function can be passed, return as value.

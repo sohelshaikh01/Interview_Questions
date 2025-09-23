@@ -99,7 +99,6 @@
 // // Stringify only properties present in array.
 // console.log(data);
 
-
 // Question 8 -------------------
 // const shape = {
 //     radius: 10,
@@ -225,7 +224,7 @@
 
 // Question 16 - What's Shallow copy and Deep copy ?
 
-// Shallow copy:
+// Shallow copy: ------------------------------------------
 // Copying the object to another object and it has atleast reference to some properties of it
 // When one object holds reference to another object
 // Ex: 
@@ -238,7 +237,8 @@
 //     user1.fname = "spider";
 //     console.log(user, user1);
 
-// Deep copy:
+
+// Deep copy: ---------------------------------------------
 // Completely clone object to another variable
 // It has no reference to the object
 
