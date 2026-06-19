@@ -82,4 +82,3 @@ console.log(ul.nextSibling);
 
 console.log(ul.previousElementSibling);
 console.log(ul.nextElementSibling);
-

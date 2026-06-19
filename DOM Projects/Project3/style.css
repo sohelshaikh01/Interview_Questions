@@ -1,9 +1,4 @@
-/* ##########################
-
-        Accordian Styling
-
-  ########################### */
-
+/* Accordian Styling */
 
 * {
     margin: 0;
@@ -71,7 +66,7 @@ body {
 }
 
 .accordian .content-container.active .question::after {
-    content: '_';
+    content: '-';
     font-size: 30px;
     transition: .5s;
 }

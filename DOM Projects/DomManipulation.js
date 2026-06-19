@@ -1,13 +1,13 @@
 // Top 14 Techniques to manipulate the DOM
 
-// // Adding Element to the page
+// 1. Adding Text to the page
 
 const body = document.body;
 // body.append("Hello World");
 // body.appendChild("Hello World");
 // similar but accepts only element
 
-// // Creating and Adding Element
+// 2. Creating and Adding Element
 
 // const div = document.createElement("div"); // Only create here.
 // div.innerText = "Hello World"; // Insert Text
@@ -15,14 +15,14 @@ const body = document.body;
 
 // body.append(div);
 
-// // Difference in 'textContent' and 'innerText'
+// 3. Difference in 'textContent' and 'innerText'
 
 // const div = document.getElementById("text");
 // console.log(div.textContent); // Exact all spaces & indentation
 // console.log(div.innerText); // Just Text
 
 
-// // Putting html in tags
+// 4. Putting html in tags
 
 // const div = document.createElement("div"); 
 // // div.textContent = "<strong> Hello World <strong>";
@@ -37,7 +37,7 @@ const body = document.body;
 // body.append(div);
 
 
-// // Remove Elements From DOM
+// 5. Remove Elements From DOM
 
 const div = document.getElementById("text");
 const spanHi = document.querySelector('#hi');
@@ -48,7 +48,7 @@ const spanBye = document.querySelector('#bye');
 // div.removeChild(spanBye); // Another Way
 
 
-// // Modifying the elements properties
+// 6. Modifying the elements properties
 
 // Print Attribute values
 // console.log(spanHi.getAttribute("id")); 
@@ -65,7 +65,7 @@ const spanBye = document.querySelector('#bye');
 // spanHi.removeAttribute("title");
 
 
-// // Custom Dataset
+// 7. Custom Dataset
 
 // console.log(spanHi.dataset);
 // data-super-name -> show in object as
@@ -77,7 +77,7 @@ const spanBye = document.querySelector('#bye');
 // spanHi.dataset.newName = "supernova";
 
 
-// // Classess Operations
+// 8. Classess Operations
 
 spanHi.classList.add("el3"); // Add
 spanHi.classList.remove("el1"); // Remove
@@ -86,7 +86,7 @@ spanHi.classList.toggle("el3"); // Exists ? Remove : Add.
 spanHi.classList.toggle("el1", true); 
 // Perform based on boolean
 
-// // Changing Style of Element
+// 9. Changing Style of Element
 
 spanHi.style.backgroundColor = "red";
 spanHi.style.color = "white";
