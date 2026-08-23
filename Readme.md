@@ -2,7 +2,7 @@
 
 This repository contains a variety of JavaScript and React interview questions, covering key concepts and best practices. Each topic is explained clearly to help with preparation and deep understanding.
 
-<img src="https://www.developerdiary.in/wp-content/uploads/2022/07/javascriptinterviewquestions-1536x826.png" alt="Interview Questions" width="100%" >
+![Interview Questions](https://www.developerdiary.in/wp-content/uploads/2022/07/javascriptinterviewquestions-1536x826.png")
 
 ## Content Sources
 
