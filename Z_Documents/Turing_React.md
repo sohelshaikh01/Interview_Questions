@@ -1,3 +1,5 @@
+## Turing Interview - React Qs
+
 1) When you use class based components & function based components
 
 2) Explain how react works & Virtual dom.
@@ -20,4 +22,3 @@ Modularization
 Reusable components
 Code splitting
 Component manage by webpacks
-
